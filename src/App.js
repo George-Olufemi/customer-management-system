@@ -3,16 +3,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from './LandingPage';
 import SignUp from './SignUp';
 import Login from './Login';
-import Dashboard from './Dashboard';  
+import Dashboard from './Dashboard';
+import NoMatch from './NoMatch';  
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route to="/" element={<LandingPage />} />
-        <Route to="/signUp" element={<SignUp />} />
-        <Route to="/login" element={<Login />} />
-        <Route to="/dashboard" element={<Dashboard />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/signUp" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="*" element={<NoMatch />} />
       </Routes>
     </BrowserRouter>
   )

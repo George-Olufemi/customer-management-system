@@ -1,8 +1,13 @@
 import React from 'react';
+import Navbar from './components/Navbar';
+import Body from './components/Body';
 
 function LandingPage() {
   return (
-    <h1>LandingPage</h1>
+    <React.Fragment>
+        <Navbar />
+        <Body />
+    </React.Fragment>
   )
 }
 
