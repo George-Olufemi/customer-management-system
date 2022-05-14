@@ -11,7 +11,7 @@ const Body = () => {
           <Slide top>
               <div className="md:flex md:justify-between pt-5">
                   <div className="text-3xl font-semibold ml-10 text-white tracking-widest">
-                      <h1 className="md:text-center">masnoo</h1>
+                      <h1 className="md:text-center">paady</h1>
                       <h1 className='text-xs text-gray-400'>subsidiary of bestbite</h1>
                   </div>
                   <div className="">
