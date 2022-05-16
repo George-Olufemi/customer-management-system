@@ -4,6 +4,7 @@ import LandingPage from '../LandingPage';
 import SignUp from '../SignUp';
 import Login from '../Login';
 import Dashboard from '../Dashboard';
+import Chart from '../Chart';
 import NoMatch from '../NoMatch'; 
 import { AnimatePresence } from 'framer-motion';
 
@@ -16,6 +17,7 @@ function AnimatedRoutes() {
             <Route path="/signUp" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/chart" element={<Chart />} />
             <Route path="*" element={<NoMatch />} />
         </Routes>
     </AnimatePresence>

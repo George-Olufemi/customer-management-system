@@ -41,11 +41,11 @@ function Login() {
             <div class="md:flex md:items-center">
                 <div class="md:w-1/3"></div>
                 <div class="md:w-2/3">
-                {/* <Link to="/dashboard"> */}
+                <Link to="/dashboard">
                     <button class="shadow bg-black hover:bg-gray-800 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-lg hover:scale-105 transition-all hover:shadow-2xl" type="button">
                         Login
                     </button>
-                {/* </Link> */}
+                </Link>
                 </div>
             </div>
             </form>

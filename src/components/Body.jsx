@@ -8,24 +8,24 @@ const Body = () => {
     <React.Fragment>
       <div>
           <div className="body h-screen md:px-10 bg-fixed bg-contain">
-          <Slide top>
-              <div className="md:flex md:justify-between pt-5">
-                  <div className="text-3xl font-semibold ml-10 text-white tracking-widest">
-                      <h1 className="md:text-center">paady</h1>
-                      <h1 className='text-xs text-gray-400'>subsidiary of bestbite</h1>
-                  </div>
-                  <div className="">
-                      <ul className="flex justify-end ml-10 mt-5">
-                          <Link to="/signup">
-                              <li className='mr-5 md:mr-7 mb-5  md:mt-0 bg-black text-white text-lg px-4 py-1 md:px-6 md:py-2 rounded-lg md:font-semibold hover:bg-gray-900 hover:text-white hover:scale-110 transition-all tracking-widest'>SignUp</li>
-                          </Link>
-                          <Link to="/login">
-                              <li className='mr-10 md:mr-14 mb-5 bg-black text-white text-lg px-4 py-1 md:px-7 md:py-2 rounded-lg md:font-semibold hover:bg-gray-900 hover:text-white hover:scale-110 transition-all tracking-widest'>Login</li>
-                          </Link>
-                      </ul>
-                  </div>
-              </div>
-            </Slide>
+            <Slide top>
+                <div className="md:flex md:justify-between pt-5">
+                    <div className="text-3xl font-semibold ml-10 text-white tracking-widest">
+                        <h1 className="md:text-center">paady</h1>
+                        <h1 className='text-xs text-gray-400'>subsidiary of bestbite</h1>
+                    </div>
+                    <div className="">
+                        <ul className="flex justify-end ml-10 mt-5">
+                            <Link to="/signup">
+                                <li className='mr-5 md:mr-7 mb-5  md:mt-0 bg-black text-white text-lg px-4 py-1 md:px-6 md:py-2 rounded-lg md:font-semibold hover:bg-gray-900 hover:text-white hover:scale-110 transition-all tracking-widest'>SignUp</li>
+                            </Link>
+                            <Link to="/login">
+                                <li className='mr-10 md:mr-14 mb-5 bg-black text-white text-lg px-4 py-1 md:px-7 md:py-2 rounded-lg md:font-semibold hover:bg-gray-900 hover:text-white hover:scale-110 transition-all tracking-widest'>Login</li>
+                            </Link>
+                        </ul>
+                    </div>
+                </div>
+              </Slide>
             {/* Text Area */}
             <div>
                 <div className="text-white text-4xl md:text-7xl font-bold tracking-wider leading-normal pt-10 md:pt-20 text-center">
