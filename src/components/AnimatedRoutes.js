@@ -6,6 +6,7 @@ import Login from '../Login';
 import Dashboard from '../Dashboard';
 import NoMatch from '../NoMatch'; 
 import { AnimatePresence } from 'framer-motion';
+import Product from '../Product';
 
 function AnimatedRoutes() {
     const location = useLocation();
@@ -16,6 +17,7 @@ function AnimatedRoutes() {
             <Route path="/signUp" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/product" element={<Product />} />
             <Route path="*" element={<NoMatch />} />
         </Routes>
     </AnimatePresence>
