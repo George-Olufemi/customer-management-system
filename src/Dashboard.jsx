@@ -18,7 +18,9 @@ function Dashboard() {
                 <h1 className="text-white text-lg mb-16">Products</h1>
               </Link>
               <h1 className="text-white text-lg mb-16">Team</h1>
-              <h1 className="text-white text-lg mb-64">Clients</h1>
+              <Link to="/client">
+                <h1 className="text-white text-lg mb-64">Clients</h1>
+              </Link>
               <Link to="/">
                   <h1 className="text-white text-lg mb-16">Logout</h1>
               </Link>
