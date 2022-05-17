@@ -67,7 +67,7 @@ function Product() {
           </div>
         </Slide>
         <Slide left>
-          <div className='App absolute -top-full pl-80 pr-10'>
+          <div className='App absolute top-10 pl-80 pr-10'>
             <table className="">
               <tr>
                 <th> ID </th>

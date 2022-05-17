@@ -48,11 +48,16 @@ export default function Team() {
   const classes = useStyles();
 
   const [teams, setTeams] = useState([]);
+  const [images, setImages] = useState([]);
 
   useEffect(() => {
     axios.get('https://fakerapi.it/api/v1/persons?_quantity=5')
     .then(response => setTeams(response.data.data))
-    console.log()
+  }, [])
+  
+  useEffect(() => {
+    axios.get('https://fakerapi.it/api/v1/images?_quantity=1&_type=kittens&_height=300')
+    .then(response => setImages(response.data.data))
   }, [])
   
 
@@ -73,6 +78,7 @@ export default function Team() {
                   <h1 className="text-white text-lg mb-16">Logout</h1>
               </Link>
         </div>
+        <Slide left>
           <div className='pt-6 ml-8 absolute right-3/4 top-0'>
                     <Link to="/dashboard">
                         <div>
@@ -82,7 +88,9 @@ export default function Team() {
                         </div>
                     </Link>
             </div>
-          <div className="px-20 pt-10 pb-12">
+        </Slide>
+        <Slide left>
+          <div className="px-20 absolute top-10 pl-80 pr-10 pt-10 pb-12">
             <TableContainer className="" component={Paper}>
                 <Table className={classes.table} aria-label="customized table">
                   <TableHead>
@@ -105,7 +113,10 @@ export default function Team() {
                           <StyledTableCell align="right">{team.phone}</StyledTableCell>
                           <StyledTableCell align="right">{team.gender}</StyledTableCell>
                           <StyledTableCell align="right">{team.address.street}, {team.address.streetName}, {team.address.city}, {team.address.country}.</StyledTableCell>
-                          <StyledTableCell align="right">{team.image}</StyledTableCell>
+                          {images ? images.map((image, idx) => (
+                            <StyledTableCell key={idx} align="right">{image.url}</StyledTableCell>
+                          )) : null
+                          }
                       </StyledTableRow>
                       ))
                       : null
@@ -114,6 +125,7 @@ export default function Team() {
                 </Table>
               </TableContainer>
             </div>
+        </Slide>
       </div>
   );
 }
