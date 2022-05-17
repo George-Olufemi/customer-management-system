@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Product.css';
+import Slide from 'react-reveal/Slide';
+
 const data = [
   { trackingid: '1', product: "Giordani Gold Foundation", customer: "Odunayo", date: "14 May",amount: '10,500', paymentmethod: "Online Payment", status: "Approved" },
   { trackingid: '2', product: "Matte Lipstick", customer: "Prudence", date: "14 May",amount: '7,000', paymentmethod: "Online Payment", status: "Approved" },
@@ -24,7 +26,7 @@ const data = [
 function Product() {
   return (
     <div className="bg-gray-200">
-      <div className='pt-6 ml-8'>
+      {/* <div className='pt-6 ml-8'>
                 <Link to="/dashboard">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -32,11 +34,40 @@ function Product() {
                         </svg>
                     </div>
                 </Link>
+        </div> */}
+        <div className="w-1/5 h-screen bg-black flex flex-col text-center">
+              <h1 className="text-white mt-8 text-2xl font-semibold pb-32 tracking-wider">Dashboard</h1>
+              <Link to="/product">
+                <h1 className="text-white text-xl mb-16 tracking-wider border-l-4">Products</h1>
+              </Link>
+              <Link to="/team">
+                <h1 className="text-white text-lg mb-16">Team</h1>
+              </Link>
+              <Link to="/client">
+                <h1 className="text-white text-lg pb-64">Clients</h1>
+              </Link>
+              <Link to="/">
+                  <h1 className="text-white text-lg mb-16">Logout</h1>
+              </Link>
         </div>
-        <div className='md:absolute md:right-20 md:top-16'>
-          <button className="bg-green-500 text-white py-2 px-4 font-semibold rounded-lg tracking-wider hover:bg-green-600 hover:scale-110 transition-all">Add New</button>
-        </div>
-          <div className='App'>
+        <Slide left>
+          <div className='pt-6 ml-8 absolute right-3/4 top-0'>
+                  <Link to="/dashboard">
+                      <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                          </svg>
+                      </div>
+                  </Link>
+          </div>
+        </Slide>
+        <Slide left>
+          <div className='md:absolute md:right-20 md:top-16'>
+            <button className="bg-green-500 text-white py-2 px-4 font-semibold rounded-lg tracking-wider hover:bg-green-600 hover:scale-110 transition-all">Add New</button>
+          </div>
+        </Slide>
+        <Slide left>
+          <div className='App absolute -top-full pl-80 pr-10'>
             <table className="">
               <tr>
                 <th> ID </th>
@@ -63,6 +94,7 @@ function Product() {
               })}
             </table>
           </div>
+        </Slide>
     </div>
   );
 }
