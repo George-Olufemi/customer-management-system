@@ -14,7 +14,7 @@ function Dashboard() {
         <div className="w-1/5 h-screen bg-black flex flex-col text-center">
               <h1 className="text-white mt-8 text-2xl font-semibold">Hello, George</h1>
               <h1 className="text-white text-lg mt-20 mb-16">Dashboard</h1>
-              <Link to="product">
+              <Link to="/product">
                 <h1 className="text-white text-lg mb-16">Products</h1>
               </Link>
               <h1 className="text-white text-lg mb-16">Team</h1>
