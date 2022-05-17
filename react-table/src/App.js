@@ -1,5 +1,5 @@
 
-import './Product.css';
+import './App.css';
 const data = [
   { trackingid: '1', product: "Giordani Gold Foundation", customer: "Odunayo", date: "14 May",amount: '10,500', paymentmethod: "Online Payment", status: "Approved" },
   { trackingid: '2', product: "Matte Lipstick", customer: "Prudence", date: "14 May",amount: '7,000', paymentmethod: "Online Payment", status: "Approved" },
