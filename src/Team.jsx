@@ -63,21 +63,26 @@ export default function Team() {
 
   return (
       <div className='md:flex'>
-        <div className="w-1/5 h-screen bg-black text-center">
-              <h1 className="text-white mt-8 text-2xl font-semibold pb-32 tracking-wider">Dashboard</h1>
-              <Link to="/product">
-                <h1 className="text-white text-xl mb-16 tracking-wider">Products</h1>
-              </Link>
-              <Link to="/team">
-                <h1 className="text-white text-lg mb-16 border-l-4">Team</h1>
-              </Link>
-              <Link to="/client">
-                <h1 className="text-white text-lg pb-64">Clients</h1>
-              </Link>
-              <Link to="/">
-                  <h1 className="text-white text-lg mb-16">Logout</h1>
-              </Link>
-        </div>
+        <Slide left>
+          <div className="hidden md:block w-1/5 h-screen bg-black text-center">
+                <h1 className="text-white mt-8 text-2xl font-semibold pb-32 tracking-wider">Dashboard</h1>
+                <Link to="/">
+                  <h1 className="text-white text-xl mb-16 tracking-wider">Home</h1>
+                </Link>
+                <Link to="/product">
+                  <h1 className="text-white text-xl mb-16 tracking-wider">Products</h1>
+                </Link>
+                <Link to="/team">
+                  <h1 className="text-white text-lg mb-16 border-l-4">Team</h1>
+                </Link>
+                <Link to="/client">
+                  <h1 className="text-white text-lg">Clients</h1>
+                </Link>
+                <Link to="/">
+                    <h1 className="text-white text-lg pt-64 mb-16">Logout</h1>
+                </Link>
+          </div>
+          </Slide>
         <Slide left>
           <div className='pt-6 ml-8'>
                     <Link to="/dashboard">

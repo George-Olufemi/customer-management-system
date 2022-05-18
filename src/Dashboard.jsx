@@ -11,8 +11,11 @@ function Dashboard() {
         animate={{ opacity: 1, width: "100%" }}
         exit={{ opacity: 0, x: window.innerWidth, transition: { duration:0.6 } }}
         >
-        <div className="w-1/5 h-screen bg-black flex flex-col text-center">
-              <h1 className="text-white mt-8 text-2xl font-semibold pb-32 tracking-wider">Dashboard</h1>
+        <div className="hidden md:block w-1/5 h-screen bg-black text-center">
+              <h1 className="text-white pt-8 text-2xl font-semibold pb-32 tracking-wider">Dashboard</h1>
+              <Link to="/">
+                  <h1 className="text-white text-xl mb-16 tracking-wider">Home</h1>
+                </Link>
               <Link to="/product">
                 <h1 className="text-white text-xl mb-16 tracking-wider">Products</h1>
               </Link>
