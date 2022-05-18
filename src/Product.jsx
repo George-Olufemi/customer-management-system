@@ -6,7 +6,7 @@ const data = [
   { trackingid: '1', product: "Giordani Gold Foundation", customer: "Odunayo", date: "14 May",amount: '10,500', paymentmethod: "Online Payment", status: "Approved" },
   { trackingid: '2', product: "Matte Lipstick", customer: "Prudence", date: "14 May",amount: '7,000', paymentmethod: "Online Payment", status: "Approved" },
   { trackingid: '3', product: "Power Face Powder", customer: "Esther", date: "14 May",amount: '5,500', paymentmethod: "Cash Payment", status: "Approved" },
-  { trackingid: '4', product: "Novage Men Set", customer: "George", date: "15 May",amount: '35,500', paymentmethod: "Online Payment", status: "Pending" },
+  { trackingid: '4', product: "Novage Men Set", customer: "George", date: "15 May",amount: '35,500', paymentmethod: "Online Payment", status: "Approved" },
   { trackingid: '5', product: "North For Men Roll-on", customer: "Ariyo", date: "15 May",amount: '15,950', paymentmethod: "Cash Payment", status: "Approved" },
   { trackingid: '6', product: "The One Eyeliner", customer: "Esther", date: "15 May",amount: '5,000', paymentmethod: "Cash Payment", status: "Approved" },
   { trackingid: '7', product: "Eclat Style Parfum", customer: "Paul", date: "16 May",amount: '24,500', paymentmethod: "Online Payment", status: "Pending" },
@@ -25,17 +25,8 @@ const data = [
 
 function Product() {
   return (
-    <div className="bg-gray-200">
-      {/* <div className='pt-6 ml-8'>
-                <Link to="/dashboard">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                        </svg>
-                    </div>
-                </Link>
-        </div> */}
-        <div className="w-1/5 h-screen bg-black flex flex-col text-center">
+    <div className="bg-gray-200 md:flex justify-between">
+        <div className="w-1/5 h-screen bg-black text-center">
               <h1 className="text-white mt-8 text-2xl font-semibold pb-32 tracking-wider">Dashboard</h1>
               <Link to="/product">
                 <h1 className="text-white text-xl mb-16 tracking-wider border-l-4">Products</h1>
@@ -51,7 +42,7 @@ function Product() {
               </Link>
         </div>
         <Slide left>
-          <div className='pt-6 ml-8 absolute right-3/4 top-0'>
+          <div className='pt-6 ml-8 '>
                   <Link to="/dashboard">
                       <div>
                           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -62,13 +53,13 @@ function Product() {
           </div>
         </Slide>
         <Slide left>
-          <div className='md:absolute md:right-20 md:top-16'>
+          <div className='absolute right-36 top-16'>
             <button className="bg-green-500 text-white py-2 px-4 font-semibold rounded-lg tracking-wider hover:bg-green-600 hover:scale-110 transition-all">Add New</button>
           </div>
         </Slide>
-        <Slide left>
-          <div className='App absolute top-10 pl-80 pr-10'>
-            <table className="">
+          <Slide left>
+          <div className='App pt-20'>
+            <table className="w-3/4">
               <tr>
                 <th> ID </th>
                 <th> Product </th>

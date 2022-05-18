@@ -62,8 +62,8 @@ export default function Team() {
   
 
   return (
-      <div>
-        <div className="w-1/5 h-screen bg-black flex flex-col text-center">
+      <div className="md:flex">
+        <div className="w-1/5 h-screen bg-black text-center">
               <h1 className="text-white mt-8 text-2xl font-semibold pb-32 tracking-wider">Dashboard</h1>
               <Link to="/product">
                 <h1 className="text-white text-xl mb-16 tracking-wider">Products</h1>
@@ -79,7 +79,7 @@ export default function Team() {
               </Link>
         </div>
         <Slide left>
-          <div className='pt-6 ml-8 absolute right-3/4 top-0'>
+          <div className='pt-6 ml-8'>
                     <Link to="/dashboard">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -90,7 +90,7 @@ export default function Team() {
             </div>
         </Slide>
         <Slide left>
-          <div className="px-20 absolute top-10 pl-80 pr-10 pt-10 pb-12">
+          <div className="px-20 pr-20 pt-20 pb-12">
             <TableContainer className="" component={Paper}>
                 <Table className={classes.table} aria-label="customized table">
                   <TableHead>
