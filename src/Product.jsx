@@ -64,7 +64,7 @@ function Product() {
         </Slide>
           <Slide left>
           <div className='App md:pt-20'>
-            <table className="w-3/4">
+            <table className="w-3/4 table-auto">
               <tr>
                 <th> ID </th>
                 <th> Product </th>
