@@ -9,6 +9,7 @@ import { AnimatePresence } from 'framer-motion';
 import Product from '../Product';
 import Client from '../Client';
 import Team from '../Team';
+import Post from '../Post';
 
 function AnimatedRoutes() {
     const location = useLocation();
@@ -22,6 +23,7 @@ function AnimatedRoutes() {
             <Route path="/product" element={<Product />} />
             <Route path="/client" element={<Client />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/post" element={<Post />} />
             <Route path="*" element={<NoMatch />} />
         </Routes>
     </AnimatePresence>

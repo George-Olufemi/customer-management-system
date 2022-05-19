@@ -58,9 +58,11 @@ function Product() {
           </div>
         </Slide>
         <Slide left>
-          <div className='absolute right-36 top-16'>
+        <Link to="/post">
+          <div className='absolute right-36 top-12'>
             <button className="bg-green-500 text-white py-2 px-4 font-semibold rounded-lg tracking-wider hover:bg-green-600 hover:scale-110 transition-all">Add New</button>
           </div>
+        </Link>
         </Slide>
           <Slide left>
           <div className='App md:pt-20'>

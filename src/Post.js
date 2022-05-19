@@ -1,5 +1,6 @@
 import React from 'react'
-import '../post.css';
+import './Post.css';
+import { Link } from "react-router-dom";
 
 const Post = () => {
     
@@ -59,18 +60,13 @@ const Post = () => {
                     <br/>
                     <input type="text" required placeholder="Status" name="Status"  />  
                 </div>
-                 
                 <br/>
-                           
                 <div class="">
-                    <Link to="./Product.jsx">
-                <button  type="submit"
-                    
-                   
-                >
-                   Post
-                </button>
-               </Link>
+                <Link to="./Product.jsx">
+                    <button  type="submit">
+                    Post
+                    </button>
+                </Link>
                 </div>
                 
                 

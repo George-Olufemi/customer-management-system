@@ -1,48 +1,48 @@
 .container{
-   background-color: white;
-   justify-content: center;
-   padding: auto;
-    margin-top: 20px;
-
-   
-   
-}
-
-label{
-    padding: 20px;
-    width: 300px;
-    font-weight: 700;
-    color: black; 
-    margin-bottom: 1px;
-    margin-top: 20px;
-    text-align: start;
-                      
-}
-
-input {
+    background-color: white;
+    justify-content: center;
+    padding: auto;
+     margin-top: 20px;
+ 
     
-    appearance: none;
-    width: 300px;
-    padding: 5px;
-    outline-color: rgb(61, 43, 3);
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-input[type="text"] {
     
-   
-    margin-bottom: 10px;
-
-}
-
-button{
-    background-color: rgb(5, 4, 0);
-    color: white;
-    outline:gray;
-    cursor: pointer;
-    width: 100px;
-    border-radius: 30px;
-
+ }
+ 
+ label{
+     padding: 20px;
+     width: 300px;
+     font-weight: 700;
+     color: black; 
+     margin-bottom: 1px;
+     margin-top: 20px;
+     text-align: start;
+                       
+ }
+ 
+ input {
+     
+     appearance: none;
+     width: 300px;
+     padding: 5px;
+     outline-color: rgb(61, 43, 3);
+     cursor: pointer;
+     border-radius: 5px;
+ }
+ 
+ input[type="text"] {
+     
     
-}
+     margin-bottom: 10px;
+ 
+ }
+ 
+ button{
+     background-color: rgb(5, 4, 0);
+     color: white;
+     outline:gray;
+     cursor: pointer;
+     width: 100px;
+     border-radius: 30px;
+ 
+     
+ }
